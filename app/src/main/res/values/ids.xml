@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="a_tv_dia" type="id"/>
+    <item name="a_lay_item_calendario" type="id"/>
+    <item name="a_ll_tipo_hora_indicator" type="id"/>
+    <item name="a_tv_calendar_header_item" type="id"/>
+    <item name="a_tv_rollcal_mes" type="id"/>
+    <item name="a_rv_rollcal_header" type="id"/>
+    <item name="a_rv_rollcal_calendario" type="id"/>
+    <item name="contrato_header" type="id"/>
+    <item name="contrato_item" type="id"/>
+
+    <item name="visible" type="id"/>
+    <item name="masked" type="id"/>
+
+</resources>

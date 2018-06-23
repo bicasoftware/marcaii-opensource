@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:padding="16dp"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_rel_dia"
+        style="@style/DefMediumText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start|center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintBottom_toBottomOf="@+id/img_rel_tipo_hora"
+        app:layout_constraintEnd_toStartOf="@+id/img_rel_tipo_hora"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_rel_tipo_hora"
+        tools:text="01/01/2016" />
+
+    <ImageView
+        android:id="@+id/img_rel_tipo_hora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_hora" />
+
+    <TextView
+        android:id="@+id/tv_rel_minutos"
+        style="@style/DefSmallText"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_rel_valor_hora"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rel_dia"
+        tools:text="60 minutos" />
+
+    <TextView
+        android:id="@+id/tv_rel_valor_hora"
+        style="@style/DefSmallText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_rel_minutos"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rel_dia"
+        tools:text="R$ 30,00" />
+
+</android.support.constraint.ConstraintLayout>

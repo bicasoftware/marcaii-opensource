@@ -1,0 +1,139 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorControlHighlight">@color/primary_light</item>
+    </style>
+
+    <style name="AppBaseThemeNoActionBar" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:itemTextAppearance">@style/PopupMenuTextStyle</item>
+        <item name="android:itemBackground">@color/primary</item>
+        <item name="colorControlHighlight">@color/primary_light</item>
+    </style>
+
+    <style name="PopupMenuTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/icons</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ResultActivity" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="TextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/icons</item>
+        <item name="android:textColorSecondary">@color/primary_light</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="stl_spinner_text">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- style usado no bottom sheet - não remover-->
+    <style name="MaterialDialogSheet" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">@style/MaterialDialogSheetAnimation</item>
+    </style>
+
+    <style name="MaterialDialogSheetAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_hide</item>
+    </style>
+    <!-- fim style bottom sheet-->
+
+    <style name="TextLabel" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:gravity">left|start|center</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+    </style>
+
+    <style name="TextContent" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+    </style>
+
+    <style name="DefExtraLargeText" parent="@style/TextAppearance.AppCompat.Large">
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+
+    <style name="DefLargeText" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+
+    <style name="DefMediumText" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/secondary_text</item>
+    </style>
+
+    <style name="DefSmallText" parent="@style/TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/accent</item>
+    </style>
+
+    <style name="DefSmallTextSecondary" parent="@style/TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/secondary_text</item>
+    </style>
+
+    <style name="DefCardView" parent="CardView.Light">
+        <item name="android:background">@drawable/dr_white_bg</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="cardElevation">2dp</item>
+    </style>
+
+    <style name="DefFlatButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+    </style>
+
+    <style name="DefCalendarioHeaderItem" parent="TextAppearance.AppCompat.Small">
+        <item name="android:color">@color/secondary_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DefCalendarioItem" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:color">@color/primary_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="PresentationTitle" parent="@style/TextAppearance.AppCompat.Large">
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+
+    <style name="PresentationDescription" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+
+    <style name="PresentationHint" parent="@style/TextAppearance.AppCompat.Small">
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

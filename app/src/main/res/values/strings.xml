@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Marcaii</string>
+    <string name="str_valor_salario">Valor Salário:</string>
+    <string name="horario_de_saida">Horario de Saída: </string>
+    <string name="str_banco_horas">Banco de Horas</string>
+    <string name="dia_do_fechamento">Dia Fechamento</string>
+    <string name="str_carga_horaria">Carga Horária:</string>
+    <string name="str_nome_emprego">Digite o Nome do Cargo:</string>
+    <string name="str_empregos">Cargos</string>
+    <string name="str_relacao">Relação</string>
+    <string name="str_porcentagem_normal">"Porc Normal:"</string>
+    <string name="str_porcentagem_feriados">"Porc Completa:"</string>
+    <string name="str_porc_dif">Porcentagens Diferenciais</string>
+    <string name="str_calendario">Calendário</string>
+    <string name="str_sim">Sim</string>
+    <string name="str_nao">Não</string>
+    <string name="str_tipo_hora">Tipo hora</string>
+    <string name="str_salarios">Salários</string>
+    <string name="str_cancelar">Cancelar</string>
+    <string name="str_opcoes">Opções</string>
+    <string name="str_normal">normal</string>
+    <string name="str_feriados">completa</string>
+    <string name="str_diferencial">diferencial</string>
+    <string name="str_valor">Valor</string>
+    <string name="str_novo_valor">Novo Valor</string>
+    <string name="str_totais">Totais</string>
+    <string name="str_vigencia">Vigencia</string>
+    <string name="str_hora_normal">Hora Normal</string>
+    <string name="str_hora_completa">Hora Completa</string>
+    <string name="str_hora_diferencial">Hora Diferencial</string>
+    <string name="str_lendo_dados">Lendo Dados…</string>
+    <string name="str_aguarde">Aguarde</string>
+    <string name="str_nova_hora">Nova Hora Extra</string>
+    <string name="str_app_descricao">Organize suas Horas Extras</string>
+    <string name="war_nome_requerido">Falta o nome do Emprego</string>
+    <string name="str_remove_pdif">Deseja remover a Porcentagem Diferencial?</string>
+    <string name="str_mes">Mês</string>
+    <string name="str_ano">Ano</string>
+    <string name="str_aumento">Novo Aumento</string>
+    <string name="str_hora_extra">Hora Extra</string>
+    <string name="str_das">Das</string>
+    <string name="str_ate">Até</string>
+    <string name="war_horas_invalidas">Horas inválidas</string>
+    <string name="war_horas_iguais">Horas iguais não são permitidas</string>
+    <string name="str_none" />
+    <string name="pholder_minutos">%1$d minutos</string>
+    <string name="pholder_horas">%1$s horas</string>
+    <string name="pholder_periodo">das %1$s até %2$s</string>
+    <string name="pholder_periodo_mes">Horas entre %1$s e %2$s</string>
+    <string name="pholder_dia_mes_periodo">%1$s das %2$s até %3$s</string>
+    <string name="pholder_horas_mes">Valores de %1$s</string>
+    <string name="war_remover_hora">Deseja remover a hora?</string>
+    <string name="str_confirmar_gerar_arquivo">Deseja gerar um relatorio?</string>
+    <string name="str_generated_file">Arquivo gerado em com sucesso! Deseja visualizar?</string>
+    <string name="str_apresentacao">Aprensetação</string>
+    <string name="str_pular_intro">Pular</string>
+    <string name="str_bem_vindo">Bem-vindo ao Marcaii</string>
+    <string name="str_comecar_info">Para começar, entre com algumas informações</string>
+    <string name="str_qnt_salario">Qual seu salário mensal?</string>
+    <string name="str_porcetagens">Porcentagens</string>
+    <string name="str_porcentagem_explicacao">Por padrão no Brasil, as empresas pagam 50% para horas extras normais e 100% em domingos e feriados</string>
+    <string name="str_porcentagem_alterar">Caso sua empresa pague um valor diferente, altere a seguir</string>
+    <string name="str_explain_deferenciais">Existe também a possibilidade de empresas pagarem um valor diferencial em algum dia específico da semana</string>
+    <string name="str_explain_deferenciais_adicionar">Caso você tenha algum acordo assim, adicione a porcentagem no dia respectivo</string>
+    <string name="str_explain_carga_horaria">No Brasil, a carga horária normalmente é de 220 horas mensais, ou seja, 8 horas diárias</string>
+    <string name="str_hint_carga_horaria">Caso você tenha uma carga horária diferente, altere abaixo</string>
+    <string name="str_hint_finalizar">Caso você tenha mais de um emprego ou queira alterar algum valor, é possível alterar depois.</string>
+    <string name="str_finalizar">Finalizado</string>
+    <string name="str_tudo_pronto">Tudo Pronto!!!</string>
+
+
+    <!-- arrays-->
+    <string-array name="arr_anos">
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+    </string-array>
+
+    <string-array name="arr_meses_ext">
+        <item>Janeiro</item>
+        <item>Fevereiro</item>
+        <item>Março</item>
+        <item>Abril</item>
+        <item>Maio</item>
+        <item>Junho</item>
+        <item>Julho</item>
+        <item>Agosto</item>
+        <item>Setembro</item>
+        <item>Outubro</item>
+        <item>Novembro</item>
+        <item>Dezembro</item>
+    </string-array>
+
+    <string-array name="arr_dia_semana_abreviado">
+        <item>Dom</item>
+        <item>Seg</item>
+        <item>Ter</item>
+        <item>Qua</item>
+        <item>Qui</item>
+        <item>Sex</item>
+        <item>Sáb</item>
+    </string-array>
+
+    <string-array name="arr_dia_semana">
+        <item>Domingo</item>
+        <item>Segunda</item>
+        <item>Terça</item>
+        <item>Quarta</item>
+        <item>Quinta</item>
+        <item>Sexta</item>
+        <item>Sábado</item>
+    </string-array>
+
+    <string-array name="arr_opcoes_relatorios">
+        <item>Arquivo .csv(planilha)</item>
+        <item>Arquivo .txt(texto)</item>
+    </string-array>
+
+    <string-array name="arr_opcoes_padrao">
+        <item>Alterar</item>
+        <item>Remover</item>
+    </string-array>
+
+    <string-array name="arr_opcoes_emprego">
+        <item>Remover emprego</item>
+    </string-array>
+
+    <string-array name="arr_salarios">
+        <item>Atualizar Valor</item>
+        <item>Recebi um Aumento!</item>
+        <item>Ver anteriores</item>
+    </string-array>
+
+    <string-array name="arr_cargas_horarias">
+        <item>220</item>
+        <item>200</item>
+        <item>180</item>
+        <item>150</item>
+        <item>18x36</item>
+        <item>12x36</item>
+    </string-array>
+</resources>

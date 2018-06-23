@@ -1,0 +1,94 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="exemple.sha.horas">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="false" />
+
+    <application
+        android:name="marcaii.Marcaii"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:installLocation="auto"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppBaseTheme"
+        android:versionCode="12"
+        android:versionName="3.5">
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="sha.br.horas.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <!-- activities -->
+
+        <!-- splash screen -->
+        <activity
+            android:name="marcaii.ActSplash"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/ResultActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <!--act presentation-->
+        <activity
+            android:name="act_presentation.ActPresentation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseThemeNoActionBar" />
+
+        <!--act principal-->
+        <activity
+            android:name="main_activity.act_main.ActMain"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme" />
+
+        <!-- act insert horas-->
+        <activity
+            android:name="act_get_hora.ActGetHoras"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <!--act insert empregos-->
+        <activity
+            android:name="act_get_empregos.core.ActGetEmpregos"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <!-- act list salarios-->
+        <activity
+            android:name="act_get_empregos.act_list_salarios.ActListaSalario"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <!-- act list totais-->
+        <activity
+            android:name="act_list_horas.ActListHoras"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme" />
+
+    </application>
+</manifest>

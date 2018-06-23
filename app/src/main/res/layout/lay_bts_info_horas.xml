@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dr_clickable_white_things"
+    android:padding="8dp">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/divider"
+        app:layout_constraintEnd_toEndOf="@+id/tv_info_hora_minutos"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_info_hora_minutos"
+        app:layout_constraintTop_toBottomOf="@+id/tv_info_hora_periodo" />
+
+    <TextView
+        android:id="@+id/tv_info_hora_data"
+        style="@style/DefExtraLargeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="32dp"
+        android:gravity="center|start"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/str_hora_extra"
+        app:layout_constraintEnd_toStartOf="@+id/bt_info_hora_update"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Hora Extra" />
+
+    <ImageButton
+        android:id="@+id/bt_info_hora_delete"
+        style="@style/DefFlatButton"
+        android:layout_width="56dp"
+        android:layout_height="0dp"
+        android:tint="@color/horadiff"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_info_hora_data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_info_hora_update"
+        app:layout_constraintTop_toTopOf="@+id/tv_info_hora_data"
+        app:srcCompat="@drawable/ic_delete" />
+
+    <ImageButton
+        android:id="@+id/bt_info_hora_update"
+        style="@style/DefFlatButton"
+        android:layout_width="56dp"
+        android:layout_height="0dp"
+        android:tint="@color/horaferiado"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_info_hora_data"
+        app:layout_constraintEnd_toStartOf="@+id/bt_info_hora_delete"
+        app:layout_constraintStart_toEndOf="@+id/tv_info_hora_data"
+        app:layout_constraintTop_toTopOf="@+id/tv_info_hora_data"
+        app:srcCompat="@drawable/ic_update" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/divider"
+        app:layout_constraintEnd_toEndOf="@+id/tv_info_hora_minutos"
+        app:layout_constraintStart_toStartOf="@+id/tv_info_hora_minutos"
+        app:layout_constraintTop_toBottomOf="@+id/tv_info_hora_minutos" />
+
+    <TextView
+        android:id="@+id/tv_info_hora_minutos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_info_hora_data"
+        app:layout_constraintTop_toBottomOf="@+id/tv_info_hora_data" />
+
+    <TextView
+        android:id="@+id/tv_info_hora_periodo"
+        style="@style/DefSmallText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        tools:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_info_hora_minutos"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/tv_info_hora_tipo_hora"
+        style="@style/DefLargeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        tools:text="Diferencial" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:srcCompat="@drawable/ic_totais" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/ic_cash" />
+
+    <TextView
+        android:id="@+id/tv_info_hora_valor"
+        style="@style/DefLargeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        tools:text="300R$" />
+
+</android.support.constraint.ConstraintLayout>

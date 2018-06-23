@@ -1,0 +1,5 @@
+<resources>
+
+    <dimen name="margin_card">2dp</dimen>
+    <dimen name="small_calendar_dimen">1dp</dimen>
+</resources>

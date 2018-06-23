@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_bbar_empregos"
+        android:enabled="true"
+        android:icon="@drawable/ic_emprego"
+        android:title="@string/str_empregos"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_bbar_calendario"
+        android:enabled="true"
+        android:icon="@drawable/ic_calendario"
+        android:title="@string/str_calendario"
+        app:showAsAction="ifRoom"/>
+
+</menu>
